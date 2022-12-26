@@ -1,0 +1,81 @@
+﻿@model CRUD_MVC_XML.Models.Inventory
+@{
+    ViewBag.Title = "AddEditProject";
+}
+@using(Html.BeginForm())
+{
+    <div>
+        <h1>Add/Edit User</h1>
+        <table>
+            <tr>
+                <td>@Html.LabelFor(m=>m.Name):</td>
+                <td>
+                    <div>
+                        @Html.TextBoxFor(m=>m.Name)
+                        @Html.ValidationMessageFor(m=>m.Name)
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>@Html.LabelFor(m=>m.ItemSupplier):</td>
+                <td>
+                    <div>
+                        @Html.TextBoxFor(m=>m.ItemSupplier)
+                        @Html.ValidationMessageFor(m=>m.ItemSupplier)
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>@Html.LabelFor(m=>m.QuantityAvailable):</td>
+                <td>
+                    <div>
+                        @Html.TextBoxFor(m=>m.QuantityAvailable)
+                        @Html.ValidationMessageFor(m=>m.QuantityAvailable)
+                    </div>
+                </td>
+            </tr>
+                <tr>
+                <td>@Html.LabelFor(m=>m.PriceCost):</td>
+                <td>
+                        <div>
+                        @Html.TextBoxFor(m=>m.PriceCost)
+                        @Html.ValidationMessageFor(m=>m.PriceCost)
+                        </div>
+                    </td>
+                </tr>
+                    <tr>
+                <td>@Html.LabelFor(m=>m.PriceSale):</td>
+                <td>
+                        <div>
+                        @Html.TextBoxFor(m=>m.PriceSale)
+                        @Html.ValidationMessageFor(m=>m.PriceSale)
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                <td>@Html.LabelFor(m=>m.OrederPoint):</td>
+                <td>
+                    <div>
+                        @Html.TextBoxFor(m=>m.OrederPoint)
+                        @Html.ValidationMessageFor(m=>m.OrederPoint)
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <div>
+                        <input id="btnAdd" type="submit" value="@if(Model.isEdit)
+                           {
+                             <text>Update</text>
+                           }
+                            else
+                           {
+                             <text>Add</text>
+                           }
+                         "/>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+}

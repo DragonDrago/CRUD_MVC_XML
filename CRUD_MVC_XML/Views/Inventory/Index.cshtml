@@ -1,0 +1,35 @@
+﻿@model IEnumerable<CRUD_MVC_XML.Models.Inventory>
+@{
+    ViewBag.Title = "Index";
+}
+ <div>
+     <h1>
+         @Html.ActionLink("Add Data","AddEditProject")
+     </h1> 
+
+     <table cellpadding="10">
+         <tr>
+             <th>Name</th>
+            <th>Item Supplier</th>
+            <th>Quantity Available</th>
+            <th>Price Cost</th>
+            <th>Price Sale</th>
+            <th>Order Point</th>
+             <th>Manage</th>
+         </tr>
+         @{
+             foreach(var item in Model){
+                 <tr style="text-align:center">
+                    <td>@item.Name</td>
+                    <td>@item.ItemSupplier</td>
+                    <td>@item.QuantityAvailable</td>
+                    <td>@item.PriceCost</td>
+                    <td>@item.PriceSale</td>
+                    <td>@item.OrederPoint</td>
+                    <td>@Html.ActionLink("Edit","AddEditProject",new {id = item.Id})/@Html.ActionLink("Delete","Delete",new {id = item.Id})</td>
+                 </tr>
+             }
+         }
+     </table>
+
+ </div>

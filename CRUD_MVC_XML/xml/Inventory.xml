@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Inventories>
+  <Inventory>
+    <ID>1</ID>
+    <Name>Ako</Name>
+    <ItemSupplier>John</ItemSupplier>
+    <QuantityAvailable>3</QuantityAvailable>
+    <PriceCost>1000</PriceCost>
+    <PriceSale>1500</PriceSale>
+    <OrderPoint>2</OrderPoint>
+  </Inventory>
+  <Inventory>
+    <ID>1</ID>
+    <Name>Daniel</Name>
+    <ItemSupplier>Finchler</ItemSupplier>
+    <QuantityAvailable>4</QuantityAvailable>
+    <PriceCost>250</PriceCost>
+    <PriceSale>300</PriceSale>
+    <OrderPoint>2</OrderPoint>
+  </Inventory>
+  <Inventory>
+    <ID>1</ID>
+    <Name>Dogman</Name>
+    <ItemSupplier>Haufman</ItemSupplier>
+    <QuantityAvailable>14</QuantityAvailable>
+    <PriceCost>1230</PriceCost>
+    <PriceSale>1770</PriceSale>
+    <OrderPoint>11</OrderPoint>
+  </Inventory>
+  <ID>0</ID>
+  <Name>Manning Publisher</Name>
+  <ItemSupplier>Brook</ItemSupplier>
+  <QuantityAvailable>15</QuantityAvailable>
+  <PriceCost>1</PriceCost>
+  <PriceSale>2</PriceSale>
+  <OrderPoint>2</OrderPoint>
+</Inventories>
